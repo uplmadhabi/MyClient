@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/display_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:hint="Result"
+
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_enter_first_value"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/display_result"
+            android:layout_margin="20dp"
+            android:hint="Enter First Value"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="5"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edt_enter_second_value"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/edt_enter_first_value"
+            android:layout_margin="20dp"
+            android:hint="Enter Second Value"
+            android:inputType="number"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/addition"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_enter_second_value"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="#0288D1"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:onClick="add"/>
+
+        <Button
+            android:id="@+id/subtraction"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_enter_second_value"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/addition"
+            android:background="#0288D1"
+            android:text="Subtract"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:onClick="subtract"/>
+
+        <Button
+            android:id="@+id/multiplication"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addition"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#0288D1"
+            android:text="Multiply"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:onClick="multiplication"/>
+
+        <Button
+            android:id="@+id/division"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subtraction"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/multiplication"
+            android:background="#0288D1"
+            android:text="Divide"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:onClick="division"/>
+
+        <Button
+            android:id="@+id/mod"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/multiplication"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#0288D1"
+            android:text="Modulus"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:onClick="mod"/>
+
+        <Button
+            android:id="@+id/power"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/division"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/multiplication"
+            android:background="#0288D1"
+            android:text="Power"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:onClick="power"/>
+
+<!--        <Button-->
+<!--            android:id="@+id/clear_data"-->
+<!--            android:layout_width="148dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/power"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="70dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:layout_marginEnd="192dp"-->
+<!--            android:layout_marginBottom="230dp"-->
+<!--            android:text="Clear Result"-->
+<!--            android:textAllCaps="false" />-->
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
